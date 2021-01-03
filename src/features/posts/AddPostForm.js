@@ -6,7 +6,7 @@ import { postAdded } from './postsSlice'
 
 export const AddPostForm = () => {
 
-  const [title, setTitle] = useState('')
+  const [title, setTitle] = useState('') // これはreact自身が持っているstate
   const [content, setContent] = useState('')
 
   const dispatch = useDispatch()

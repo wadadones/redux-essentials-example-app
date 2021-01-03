@@ -2,7 +2,7 @@ import React from 'react'
 import { useSelector } from 'react-redux'
 
 export const PostsList = () => {
-  const posts = useSelector(state => state.posts)
+  const posts = useSelector(state => state.posts) // postsは store.jsの configureStoreで定義している。postsのデータ型はconfigureStoreで設定しているreducerで定義している？
 
   const renderedPosts = posts.map(post =>
     <article className="post-excerpt" key={post.id}>
